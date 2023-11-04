@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="EcranRechercherSalle" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release">
+				<Option output="bin/Release/EcranRechercherSalle" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="`wx-config --cflags`" />
+			<Add option="-Wall" />
+		</Compiler>
+		<Linker>
+			<Add option="`wx-config --libs`" />
+		</Linker>
+		<Unit filename="EcranRechercherSalleApp.cpp" />
+		<Unit filename="EcranRechercherSalleApp.h" />
+		<Unit filename="EcranRechercherSalleMain.cpp" />
+		<Unit filename="EcranRechercherSalleMain.h" />
+		<Unit filename="wxsmith/EcranRechercherSalleframe.wxs" />
+		<Extensions>
+			<wxsmith version="1">
+				<gui name="wxWidgets" src="EcranRechercherSalleApp.cpp" main="EcranRechercherSalleFrame" init_handlers="necessary" language="CPP" />
+				<resources>
+					<wxFrame wxs="wxsmith/EcranRechercherSalleframe.wxs" src="EcranRechercherSalleMain.cpp" hdr="EcranRechercherSalleMain.h" fwddecl="0" i18n="1" name="EcranRechercherSalleFrame" language="CPP" />
+				</resources>
+			</wxsmith>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
